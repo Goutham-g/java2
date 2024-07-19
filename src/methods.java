@@ -35,13 +35,13 @@ public class methods {
 
 
     public static void main(String[] args) {
-//        myMethod();
-//        myMethod();
-//        myMethod();
-//        passPara("Goutham");
-//        passPara("Adithyan");
-//        mulPara("Goutham",26);
-//        checkAccess(19);
+        myMethod();
+        myMethod();
+        myMethod();
+        passPara("Goutham");
+        passPara("Adithyan");
+        mulPara("Goutham",26);
+        checkAccess(19);
 
 //        System.out.println(sum2(22,3));
         int z= sum2(2,4);
