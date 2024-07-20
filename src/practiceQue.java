@@ -19,7 +19,7 @@ public class practiceQue {
 //    }
     //move all zeros to end of array
 
-     static void moveZero(int[] arr){
+     public static void moveZero(int[] arr){
         ;
         int i;
         int j=0;
@@ -80,6 +80,73 @@ public class practiceQue {
         System.out.println("\nArray with all zeros at end="+Arrays.toString(arr1));
 
         ////
+      //merge two arrays of  same size and sort in decending
+        int [] ar1={8,4,3,5,2,6};
+        int [] ar2={2,5,4,3,7,5};
+
+        int tSize= ar1.length+ar2.length; //total len of 2 array
+
+        //create new array
+        int[] ar3 = new int[tSize];
+
+        int index = 0;
+        //copy ar1 to a3
+        for(i=0;i<ar1.length;i++){
+            ar3[index]=ar1[i];
+            index++;
+        }
+        //copy ar2 to a3
+        for(i=0;i<ar2.length;i++){
+            ar3[index]=ar2[i];
+            index++;
+        }
+        //sort
+        for(i=0;i<ar3.length;i++){
+            for(j=i+1;j<ar3.length;j++){
+
+                 if(ar3[i]<ar3[j]){
+                      int temp=ar3[i];
+                      ar3[i]=ar3[j];
+                      ar3[j]=temp;
+                 }
+            }
+        }
+        System.out.print("array merged and sorted:");
+        for(i=0;i<ar3.length;i++){
+            System.out.print(ar3[i]+",");
+        }
+
+        // delete multiple of 5
+
+        int[] mArr={1,5,12,15,23,20};
+
+        int[] tempAr=new int[mArr.length];
+      int count1 =0;
+        for(i=0;i<mArr.length;i++){
+
+            if(mArr[i] % 5 != 0){
+                tempAr[count1]=mArr[i];
+                   count1++;
+                }
+        }
+
+        int[] newArr = new int[count1];
+
+          for(i=0;i<count1;i++){
+              newArr[i]=tempAr[i];
+          }
+          //print
+        System.out.print
+                ("\nArray removed multiples of 5:\t");
+          for(i=0;i<newArr.length;i++){
+              System.out.print(newArr[i]+",");
+          }
+
+
+
+
+
+
 
 
 

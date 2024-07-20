@@ -4,6 +4,11 @@ import java.util.Date;
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
+
+  int x=10;
+
+
+
     public static void main(String[] args) {
        int age=40;
        // primitive types
@@ -13,13 +18,17 @@ public class Main {
        // reference type
         Date now = new Date()     ;
        // System.out.println(now);
-
+methods my = new methods();
+my.myMethod();
 //       byte x = 5;
 //       byte y = x;
 //       x = 2;
 //        System.out.println(y);
 
         //reference tips
+practiceQue que=new practiceQue();
+
+
 
         Point point1 = new Point(1,1);
         Point point2 = point1;

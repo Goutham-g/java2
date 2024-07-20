@@ -1,7 +1,7 @@
 public class methods {
 
-    static void myMethod(){
-        System.out.println("This is a method");
+    public void myMethod(){
+         System.out.println("This is a method");
     }
 
     //pass parameters
@@ -35,9 +35,11 @@ public class methods {
 
 
     public static void main(String[] args) {
-        myMethod();
-        myMethod();
-        myMethod();
+      methods my1= new methods();
+      my1.myMethod();
+//        methods.myMethod();
+//        myMethod();
+//        myMethod();
         passPara("Goutham");
         passPara("Adithyan");
         mulPara("Goutham",26);

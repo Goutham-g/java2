@@ -4,6 +4,7 @@ public class Arr {
     public static void main(String[] args) {
 
 
+
         int[] num= new int[5];   // intialise an array
         //add elemts to array
 
