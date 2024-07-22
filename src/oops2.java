@@ -3,7 +3,7 @@ class constructor{
     String modelName;
 
 
-    public constructor(int Year, String name){
+    public  constructor(int Year, String name){
         modelYear=Year;
         modelName=name;
     }
