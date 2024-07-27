@@ -1,7 +1,6 @@
 
 //Encapsulation example
-class
-person{
+class person{
     private String name; // private restricted access
 
     //getter
@@ -81,6 +80,20 @@ interface Animals{
     void run();
 
 }
+interface  Birds{
+    void drink();
+}
+interface crow extends Birds{
+    @Override
+    void drink();
+}
+class smallCrow implements crow{
+    public void drink(){
+
+    }
+}
+
+
  class Cat implements Animals{
 
 public void animalSound(){
@@ -92,6 +105,40 @@ public void run(){
 
 
  }
+ // interface eg - implement interface using abstract class
+interface  A {
+    void a();
+    void b();
+     void c();
+     void d();
+
+
+
+ }
+ abstract class K implements A{
+public void a(){
+    System.out.println();
+};
+ class D extends K{
+  public void b(){
+
+     }
+   public  void c(){
+
+     }
+    public void d(){
+
+     }
+ }
+
+
+
+
+
+
+
+
+}
 
 
 

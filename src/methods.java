@@ -21,7 +21,7 @@ public class methods {
         }
     }
 //method with return
-    static int sum2(int x,int y){
+     public int sum2(int x,int y){
         return x+y;
     }
     //function with recursion
@@ -32,6 +32,7 @@ public class methods {
             return 0;
         }
     }
+
 
 
     public static void main(String[] args) {
@@ -46,7 +47,9 @@ public class methods {
         checkAccess(19);
 
 //        System.out.println(sum2(22,3));
-        int z= sum2(2,4);
+        methods met =new methods();
+
+        int z= met.sum2(1,2);
         System.out.println(z);
 
     }

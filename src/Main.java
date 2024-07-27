@@ -1,16 +1,37 @@
 import java.awt.*;
 import java.util.Date;
+abstract class Animal3{
+    abstract void sound();
+}
+class pig extends Animal{
+    public void sound(){
+        System.out.println("pig makes sound");
+    }
+}
+class H{
+    static int m=100;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+
+}
+
+
+
+
 public class Main {
 
   int x=10;
 
 
+  public static void main(String[] args) {
 
-    public static void main(String[] args) {
+
+      int m=100;
        int age=40;
+      int age1 = age;
+      float f =10.5F;
+      int a = (int) f;
+      System.out.println(a);
+
        // primitive types
             byte myAge = 30;
             long viewCount = 3_123_456_234L;
@@ -28,7 +49,7 @@ my.myMethod();
         //reference tips
 practiceQue que=new practiceQue();
 
-
+        Point p3=new Point();
 
         Point point1 = new Point(1,1);
         Point point2 = point1;
@@ -40,7 +61,7 @@ practiceQue que=new practiceQue();
 
        String message = "Hello world"+ "!!";
 
-        System.out.println(message);
+        System.out.println(message.toString());
         System.out.println(message.endsWith("M"));
         System.out.println(message.endsWith("!!"));
         System.out.println(message.startsWith("H"));
